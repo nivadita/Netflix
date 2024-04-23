@@ -3,8 +3,11 @@
 - create-resct-app
 - configure TailwindCSS
 - Header
+- Routing of app
 - Login form
 - Sign up form
+- Form Validation------ through regex
+- UseRef Hook
 
 
 
