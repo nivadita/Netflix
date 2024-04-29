@@ -17,10 +17,10 @@ const Login = () => {
     );
     setErrorMessage(message);
     if (message) return;
-    if (!signInForm) {
+    if (!isSignInForm) {
       //sign uo logic
     }
-    else (isSignInForm) {
+    else if (isSignInForm) {
       //sign in logic
     }
   };
@@ -29,11 +29,12 @@ const Login = () => {
   };
   return (
     <div className="flex">
+
       <Header />
 
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src="lhttps://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg"
           alt="logo"
         />
       </div>
@@ -76,9 +77,12 @@ const Login = () => {
             ? "New to Netflix? Sign Up Now"
             : "Already registered?Sign In Now"}
         </p>
-      </form>
+    
+      </form>         
     </div>
-  );
+  )
+    
+  
 };
 
 export default Login;

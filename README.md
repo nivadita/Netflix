@@ -1,6 +1,6 @@
 # Netflix gpt
 
-- create-resct-app
+- create-react-app
 - configure TailwindCSS
 - Header
 - Routing of app
