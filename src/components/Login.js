@@ -62,6 +62,7 @@ const Login = () => {
   };
   return (
     <div className="flex">
+
       <Header />
 
       <div className="absolute">
@@ -109,8 +110,11 @@ const Login = () => {
             ? "New to Netflix? Sign Up Now"
             : "Already registered?Sign In Now"}
         </p>
-      </form>
+    
+      </form>         
     </div>
-  );
+  )
+    
+  
 };
 export default Login;
