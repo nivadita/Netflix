@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+
   //const name = useRef(null)
   const email = useRef(null);
   const password = useRef(null);
@@ -47,6 +48,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
+
           // ...
         })
         .catch((error) => {
@@ -62,7 +64,6 @@ const Login = () => {
   };
   return (
     <div className="flex">
-
       <Header />
 
       <div className="absolute">
@@ -110,11 +111,8 @@ const Login = () => {
             ? "New to Netflix? Sign Up Now"
             : "Already registered?Sign In Now"}
         </p>
-    
-      </form>         
+      </form>
     </div>
-  )
-    
-  
+  );
 };
 export default Login;

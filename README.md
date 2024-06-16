@@ -11,6 +11,11 @@
 - Firebase Setup
 - Deploying our App to Production
 - Create a signup user account
+- implement sign in user api
+- created redux store and user slice
+- Implemented the sign out feature
+- BUgfix - If the user is nit sign in redirect to /browse to login page
+- Unsubscribe to the onAuthChanged call back
 
 # Features
 
