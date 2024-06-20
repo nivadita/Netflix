@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth/web-extension";
+import {LOGO, SIGNOUT_LOGO} from "../utils/constants";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,7 +29,8 @@ const Header = () => {
         dispatch(removeUser());
         navigate("/");
       }
-    });
+    }); 
+    // unsubscribe when the component is unmounted
     return () => unsubscribe();
   }, []);
   const handleSignOut = () => {
@@ -45,7 +47,7 @@ const Header = () => {
     <div className="absolute flex  justify-between w-screen px-8 py-2  bg-gradient-to-b from-black z-10">
       <img
         className="w-44"
-        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+        src= {LOGO}
         alt="logo"
       />
 
@@ -54,7 +56,7 @@ const Header = () => {
           <img
             className="w-10 h-10 m-2 "
             alt="signoutlogo"
-            src="https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABfjwXqIYd3kCEU6KWsiHSHvkft8VhZg0yyD50a_pHXku4dz9VgxWwfA2ontwogStpj1NE9NJMt7sCpSKFEY2zmgqqQfcw1FMWwB9.png?r=229"
+            src= {SIGNOUT_LOGO}
           />
           <button onClick={handleSignOut} className="font-bold text-white">
             sign Out

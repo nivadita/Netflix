@@ -16,7 +16,8 @@
 - Implemented the sign out feature
 - BUgfix - If the user is nit sign in redirect to /browse to login page
 - Unsubscribe to the onAuthChanged call back
-
+- Add hardcoded value to constants file
+- Register TMDB and get the Api for movies and call the Api
 # Features
 
 - login/signup
